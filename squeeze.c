@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void squeeze(char s[], int c)
+void squeeze(char s[], char c)
 {
     int i, j;
     for (i = j = 0; s[i] != '\0'; i++)
@@ -17,5 +17,9 @@ void squeeze(char s[], int c)
 }
 int main()
 {
+    char a[] = "hello how are you";
+    char c = 'a';
+    squeeze(a, c);
+    printf("%s\n", a);
     return 0;
 }

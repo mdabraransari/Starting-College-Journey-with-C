@@ -2,19 +2,19 @@
 
 int main() {
     int c;
-    int last_was_blank = 0;  // flag to remember if last char was a blank
+    int last_was_blank = 0;  
 
     while ((c = getchar()) != EOF) {
         if (c == ' ') {
 
-            if (!last_was_blank) {   // first blank in a sequence
+            if (!last_was_blank) {   
                 putchar(c);
-                last_was_blank = 1;  // now we are inside blanks
+                last_was_blank = 1;  
             }
-            // else: skip additional blanks
+           
         } else {
             putchar(c);
-            last_was_blank = 0;  // reset flag since it's not a blank
+            last_was_blank = 0; 
         }
     }
 
