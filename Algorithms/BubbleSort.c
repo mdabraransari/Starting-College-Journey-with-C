@@ -28,10 +28,12 @@ void printArray(int arr[], int size){
     }
 }
 int main(){
-    int arr[] = { 64, 34, 25, 12 , 22, 11, 90};
+    int arr[] = { 64, 34, 25, 66, 22, 11, 90};
     int n = sizeof(arr)/ sizeof(arr[0]);
+    printf("Actual Array\n");
+    printArray(arr, n);
 
     bubbleSort(arr, n);
-    printf("Sorted array: \n");
+    printf("\nSorted array: \n");
     printArray(arr, n);
 }
